@@ -1,4 +1,4 @@
-package ru.goncharova.mynotes;
+package ru.goncharova.my_notes;
 
 import java.util.Date;
 
