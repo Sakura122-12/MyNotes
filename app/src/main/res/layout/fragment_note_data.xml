@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoteDataFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nameNote"
+            android:layout_width="415dp"
+            android:layout_height="27dp"
+            android:text="Имя заметки"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editTextNameNote"
+            android:layout_width="410dp"
+            android:layout_height="69dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameNote" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="410dp"
+            android:layout_height="28dp"
+            android:text="Автор"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNameNote" />
+
+        <EditText
+            android:id="@+id/editTextNameAuthor"
+            android:layout_width="417dp"
+            android:layout_height="66dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/author" />
+
+        <TextView
+            android:id="@+id/textNote"
+            android:layout_width="410dp"
+            android:layout_height="32dp"
+            android:text="Текст"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNameAuthor" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="415dp"
+            android:layout_height="82dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/textNote"
+            tools:layout_editor_absoluteX="0dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/dataTime"
+            android:layout_width="411dp"
+            android:layout_height="36dp"
+            android:text="Дата/время"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+        <EditText
+            android:id="@+id/editTextDataTime"
+            android:layout_width="416dp"
+            android:layout_height="91dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dataTime" />
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Добавить"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDataTime"
+            tools:layout_editor_absoluteX="161dp"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
